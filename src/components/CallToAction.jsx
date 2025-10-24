@@ -5,13 +5,18 @@ function CallToAction() {
     <section className="cta-section" id="cta">
       <h2>Visit Our Pop-Up</h2>
       <p>
-        Visit our pop-up at Mega Kuningan and PIK, Jakarta. Order online or book private events now!
+        Experience the finest matcha at our pop-up locations in Mega Kuningan and PIK, Jakarta. 
+        Order online for delivery or book your visit today!
       </p>
       <div className="cta-buttons">
-        <a href="#locations" className="cta-button primary">📍 Visit Pop-Up Locations</a>
-        <a href="#order" className="cta-button secondary">🛒 Order Online</a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
-          📱 Follow on Instagram
+        <a href="#about" className="cta-button primary">
+          Find Our Locations
+        </a>
+        <a href="https://wa.me/62" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
+          Order via WhatsApp
+        </a>
+        <a href="https://instagram.com/goody2shoes_stores" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
+          Follow on Instagram
         </a>
       </div>
     </section>
