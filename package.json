@@ -2,12 +2,35 @@
   "name": "goody2shoes-matcha-brochure",
   "version": "1.0.0",
   "description": "Vibrant webapp brochure for Goody2Shoes Matcha Pop-Up Jakarta",
-  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "build": "node -e \"console.log('Validating static site files...'); const fs = require('fs'); const files = ['index.html', 'styles.css', 'script.js', 'netlify.toml']; files.forEach(file => { try { fs.accessSync(file); console.log('✓ ' + file); } catch(e) { console.error('✗ Missing: ' + file); process.exit(1); } }); console.log('\\n✓ Build validation successful! All required files present.');\",
-    "dev": "python3 -m http.server 8888",
-    "start": "python3 -m http.server 8888",
-    "test": "echo \"No tests specified\" && exit 0"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "keywords": [
     "matcha",
@@ -15,7 +38,7 @@
     "cafe",
     "brochure",
     "webapp",
-    "static-site"
+    "react"
   ],
   "author": "Goody2Shoes Matcha",
   "license": "MIT",
@@ -23,7 +46,6 @@
     "type": "git",
     "url": "https://github.com/billsusanto/Goody2Shoes-Brochure"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0"
   }
